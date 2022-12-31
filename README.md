@@ -1,0 +1,1 @@
+This Project is part of the Odin Project curriculum. I am going to utilize flexbox to build a modern looking website from scratch.
