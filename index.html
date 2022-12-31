@@ -5,7 +5,7 @@
     <title>LandingPage</title>
     <link href="styles.css" rel="stylesheet">
 </head>
-<body>
+<body> 
     <header>
         <p>Header Logo</p>
         <ul>
@@ -16,47 +16,57 @@
     </header>
     <main>
         <div class="introduction">
-            <div class="main-heading">
-            <h1>This website is awesome</h1>
-            <p>This website has some subtext that goes under the main title.It's a smaller font and a lower contrast.</p>
-            <button>Sign up</button>
+            <div class="heading">
+                <h1>This website is awesome</h1>
+                <p>This website has some subtext that goes under the main title.It's a smaller font and a lower contrast.</p>
+                <button>Sign up</button>
             </div>
-            <img src="placeholder.jpg" />
+            <div class="introduction-image">
+                <img src="placeholder.jpg" />
+            </div>
         </div>
         <div class="information">
             <div class="information-header">
             <h2>Some random information.</h2>
             </div>
-            <div class="information-images">
-            <figure>
-                <img>
-                <figcaption>this is some subtext under an illustration or image</figcaption>
-            </figure> 
-            <figure>
-                <img>
-                <figcaption>this is some subtext under an illustration or image</figcaption>
-            </figure> 
-            <figure>
-                <img>
-                <figcaption>this is some subtext under an illustration or image</figcaption>
-            </figure> 
-            <figure>
-                <img>
-                <figcaption>this is some subtext under an illustration or image</figcaption>
-            </figure>
-            </div>             
+            <div class="information-container">
+                <div class="image-container">
+                    <figure><img>
+                        <figcaption>this is some subtext under an illustration or image</figcaption>
+                    </figure>
+                </div>  
+                <div class="image-container">
+                    <figure><img>
+                        <figcaption>this is some subtext under an illustration or image</figcaption>
+                    </figure>
+                </div>
+                <div class="image-container">
+                    <figure><img>
+                        <figcaption>this is some subtext under an illustration or image</figcaption>
+                    </figure>
+                </div>
+                <div class="image-container">
+                    <figure><img>
+                        <figcaption>this is some subtext under an illustration or image</figcaption>
+                    </figure>
+                </div>
+            </div>
         </div>
         <div class="quote">
             <div class="quote-container">
-            <p>This is an inspiring quote, or a testimonial from a customer. Maybe it's just filling up space, or maybe people will actually read it. Who knows? All I know is that it looks nice. </p>
-            <p id="author">-Thor,God of Thunder</p>
+                <p><em>This is an inspiring quote, or a testimonial from a customer. Maybe it's just filling up space, or maybe people will actually read it. Who knows? All I know is that it looks nice.</em> </p>
+                <p class="author">-Thor, God of Thunder</p>
             </div>
         </div>
         <div class="sign-up">
+            <div class="sign-up-container">
+                <div class="sign-up-text">
+                    <p>Call to action! It's time!</p>
+                    <p>Sign up for our product by clicking that button right over there!</p>
+                </div>
             <div class="sign-up-button">
-                <p>Call to action! It's time!</p>
-                <p>Sign up for our product by clicking that button right over there!</p>
                 <button>Sign up</button>
+            </div>
             </div>
         </div>
     </main>

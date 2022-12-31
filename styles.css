@@ -6,97 +6,177 @@
 body{
     display:flex;
     flex-direction: column;
-    min-height: 100vh;
+    min-height: 1800px;
 }
+
+/* Header customization*/
+
 header{
     background-color:#1F2937;
-    color:white;   
+    color:#E5E7EB;   
     display:flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
+    gap:240px;
+    padding:20px;
 }
-ul{
+header p {
+    font-size: 24px;
+    font-weight: bold;
+}
+header ul{
     list-style: none;
     display: flex;
     gap: 20px;
 }
+header a,.introduction p{
+    font-size:18px;
+    color:#E5E7EB;
+}
+
+/*main customization*/
 
 main{
     display:flex;
     flex-direction: column;
-    flex:1;    
-    justify-content: space-evenly;
-    
+    flex:1;      
 }
 
-.introduction{
-    display: flex;
+/* introduction customization*/
+
+.introduction{   
     background-color: #1F2937;
-    color:white;
-    flex-grow: 1; 
-    justify-content: space-around;
+    color:#E5E7EB;
+    flex:1;
+    display: flex;
+    justify-content:center;
     align-items: center;
+    gap:60px;     
+}
+.introduction .heading{
+    width:300px;   
+}
+.introduction .heading h1{
+    font-size: 48px;
+    color:#F9FAF8;  
+    margin-bottom:10px;
+}
+.introduction .heading p{
+    margin-bottom:10px;
+}
+.introduction .heading button{
+    background-color: #3882F6;
+    border:1px solid #3882F6;
+    border-radius: 5px;
+    color:white;
+    padding:5px 20px;
+}
+.introduction .introduction-image img{
+    width:400px;
+    height: 200px;
 }
 
-.main-heading{
-    width:300px;
-}
-
-img{
-    width:300px;
-    height: 100px;
-}
+/*information customizaion*/
 
 .information{
-    background-color: antiquewhite;
+    background-color:white;
     display: flex;
-    flex-grow:1; 
-    flex-direction: column;
-    justify-content: center;
-
-}
-.information-images{
-    display:flex;
-    justify-content: center;
-}
-.information h2{
-    text-align: center;
-}
-.quote{
-    background-color: gray;
-    flex-grow:1; 
-    display:flex;
+    flex:1;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
+    gap:50px;
+}
+/*
+.information-header{
+    display:flex;
+    justify-content: flex-start;
+    align-items: center;
+}*/
+.information-header h2{
+    font-size:36px;
+    font-weight: bold;
+}
+.information-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:10px;
+}
+.information .information-container .image-container{
+    width:140px;
+}
+.information .information-container .image-container img{
+    height: 130px;
+    width: 130px;
+    border-radius: 14px;
+    border:2px solid#3882F6;
+}
+
+/*quote customization*/
+
+.quote{
+    background-color: #E5E7EB;
+    flex:1; 
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;    
 }
 .quote-container{
-   
     display:flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-size: 36px;
-    width:780px;
-
+    font-size: 32px;
+    font-weight:10;
+    width:680px;
 }
-#author{
+.quote .quote-container .author{
     align-self: flex-end;
     margin-right:40px;
     font-size: 18px;
+    font-weight: bold;
 }
+
+/*sign-up customization*/
 
 .sign-up
 {
-    background-color: antiquewhite;
-   flex-grow:1; 
+    background-color: white;
+    flex-grow:1; 
+    display:flex;
+    justify-content: center;
+    align-items: center;    
+}
+.sign-up-container{
+    width:760px;
+    height:100px;
+    color:white;
+    background-color: #3882F6;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 5px;
+    padding:60px;
+
+}
+.sign-up-button button{
+    background-color: #3882F6;
+    border: 1px solid white;
+    border-radius: 5px;
+    color:white;
+    padding:5px 20px;
 }
 
-.sign-up-button{
-    
-}
+/*footer customization*/
+
 footer{
     background-color: #1F2937;
+    height:60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:white;
     
 }
