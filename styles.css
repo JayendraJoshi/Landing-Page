@@ -4,6 +4,7 @@
     margin:0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
 }
 body{
     display:flex;
@@ -15,26 +16,31 @@ body{
 /* header customization*/
 
 header{
-    background-color:#1F2937;
-    color:#E5E7EB;  
-    font-family: 'Roboto', sans-serif;
     display:flex;
-    justify-content: center;
     align-items: center;
-    gap:240px;
-    padding:20px;
-    height:70px;
+    justify-content: center; 
+    font-family: 'Roboto', sans-serif;
+    height:70px;  
+    background-color:black;
+    color:#E5E7EB; 
 }
-header p {
+.header-container{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-basis: 1000px;
+}
+.header-container p {
     font-size: 24px;
     font-weight: bold;
 }
-header ul{
-    list-style: none;
+
+.header-container ul{
     display: flex;
+    list-style: none;
     gap: 20px;
 }
-header a,.introduction p{
+.header-container a,.introduction p{
     font-size:18px;
     color:#E5E7EB;
 }
@@ -45,53 +51,63 @@ main{
     display:flex;
     flex-direction: column;
     flex:auto;     
-    font-family: 'Roboto', sans-serif;
 }
 
 /* introduction customization*/
 
 .introduction{   
-    background-color: #1F2937;
-    color:#E5E7EB;
     flex:1 415px;
     display: flex;
     justify-content:center;
     align-items: center;
-    gap:60px;     
+    background-color:black;
+    color:#E5E7EB;
 }
-.introduction .heading{
-    width:300px;   
+.introduction-container{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-basis:1100px;
+    margin-left: 100px;  
 }
-.introduction .heading h1{
-    font-size: 48px;
+.introduction-container .introduction-header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width:540px;   
+    gap:10px;
+}
+.introduction-container .introduction-header h1{
     color:#F9FAF8;  
-    margin-bottom:10px;
+    font-size: 48px;
     font-weight: bold;
-}
-.introduction .heading p{
     margin-bottom:10px;
 }
-.introduction .heading button{
-    background-color: #3882F6;
+.introduction-container .introduction-header p{
+    margin-bottom:10px;
+}
+.introduction-container .introduction-header button{
+    align-self: flex-start;
     border:1px solid #3882F6;
     border-radius: 5px;
-    color:white;
     padding:5px 20px;
+    color:white;
+    background-color: #3882F6;
 }
-.introduction .introduction-image img{
-    width:400px;
-    height: 200px;
+.introduction-container .introduction-image img{
+    width:450px;
+    height: 300px;   
 }
 
 /*information customizaion*/
 
 .information{
-    background-color:white;
-    display: flex;
     flex:1 415px;
+    display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
     gap:50px;
 }
 .information-header h2{
@@ -100,96 +116,96 @@ main{
 }
 .information-container{
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
+    width:1200px;
     gap:30px;
+    padding:10px;
+    background-color:white;
 }
 .information .information-container .image-container{
-    width:140px;
+    width:240px;
+    height:240px;
 }
 .information .information-container .image-container img{
-    height: 130px;
-    width: 130px;
+    height: 150px;
+    width: 240px;
     border-radius: 14px;
-    border:2px solid#3882F6;
+    border:2px solid black;
+    margin-bottom: 10px;
 }
 
 /*quote customization*/
 
 .quote{
-    background-color: #E5E7EB;
     flex:1 415px;
-    display:flex;
+    display:flex; 
     flex-direction: column;
+    align-items: center; 
     justify-content: center;
-    align-items: center;    
+    background-color: #E5E7EB;  
 }
 .quote-container{
     display:flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    font-size: 32px;
+    justify-content: center;
+    width:900px;
+    font-size: 34px;
     font-weight:10;
-    width:680px;
 }
 .quote .quote-container .author{
     align-self: flex-end;
-    margin-right:40px;
     font-size: 18px;
-    font-weight: bold;
+    font-weight: bold; 
 }
 
 /*sign-up customization*/
 
 .sign-up
 {
-    background-color: white;
     flex:1 415px;
     display:flex;
-    justify-content: center;
     align-items: center; 
+    justify-content: center;
+    background-color: white;
 }
 .sign-up-container{
-    width:820px;
-    height:100px;
-    color:white;
-    background-color: #3882F6;
     display: flex;
-    justify-content: space-around;
     align-items: center;
+    justify-content: space-around;
+    width:900px;
+    height:100px;
     border-radius: 5px;
     padding:70px 80px;
     gap:60px;
-
+    background-color: #3882F6;
+    color:white;
 }
 .sign-up .sign-up-container .sign-up-text p{
     font-size: 18px;
     padding:2px;
 }
 
-.sign-up .sign-up-container .sign-up-text .sign-up-text-heading{
+.sign-up .sign-up-container .sign-up-text .sign-up-text-header{
     font-weight: bold;
 }
 
 .sign-up-button button{
-    background-color: #3882F6;
-    border: 1px solid white;
+    border: 2px solid white;
     border-radius: 5px;
-    color:white;
     padding:5px 20px;
+    color:white;
+    background-color: #3882F6
 }
 
 /*footer customization*/
 
 footer{
-    background-color: #1F2937;
-    height:60px;
     display: flex;
     align-items: center;
     justify-content: center;
-    color:white;
     height:70px;
-    font-family: 'Roboto', sans-serif;
-    
+    color:white;
+    background-color: black; 
 }
